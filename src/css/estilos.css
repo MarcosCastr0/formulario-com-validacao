@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background: repeat-x, url(../images/bg.png);
+    background-size: cover;
+    padding: 1.2rem 5rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.texto-principal{
+    display: flex;
+    max-width: 34rem;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+.principal .titulo{
+    color: var(--branco);
+    font-size: var(--tamanho-titulo);
+    font-weight: var(--peso-forte);
+    text-transform: uppercase;
+    line-height: 2.344rem;
+    margin-bottom: 1.1rem;
+}
+
+.principal .paragrafo{
+    color: var(--branco);
+    font-size: var(--tamanho-paragrafo);
+    font-weight: var(--peso-regular);
+    max-width: 30rem;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--branco);
+    height: 38rem;
+    width: 34rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.formulario :nth-child(n) {
+    border-radius: 5px;
+}
+
+.formulario ::placeholder {
+    color: var(--placeholder);
+    position: relative;
+    font-weight: var(--peso-forte);
+}
+
+.formulario .campos{
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: solid 1px;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: var(--peso-forte);
+    padding-left: 1rem;
+}
+
+textarea{
+    border: solid 1px;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: var(--peso-forte);
+    padding-left: 1rem;
+    resize: none;
+}
+
+.formulario .campos .mensagem{
+    min-height: 10rem;
+}
+
+.formulario textarea::placeholder{
+    position: absolute;
+    top: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario :nth-child(4) {
+    min-height: 10rem;
+}
+
+.formulario p {
+    margin-bottom: 1.1rem;
+    color: var(--preto);
+    font-size: 1.5rem;
+    font-weight: var(--fontePequena);
+}
+
+.formulario .botao { 
+    display: flex;
+    background-color: var(--cor-cto);
+    min-height: 4rem;
+    color: var(--branco);
+    justify-content: center;
+    align-items: center;
+    font-size: var(--tamanho-paragrafo);
+    font-weight: var(--peso-forte);
+}
+
+.campoObrigatorioVazio :nth-child(n){
+    border-color: var(--perigo);
+    display: block;
+}
+
+.campoObrigatorioPreenchido :nth-child(1){
+    border-color: var(--sucesso);
+}
+
+.formulario label {
+    font-size: 8px;
+    color: var(--perigo);
+    display: none;
+}
+
+.formulario .campos-obrigatorios{
+    font-size: 12px;
+}

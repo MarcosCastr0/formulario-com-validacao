@@ -1,0 +1,21 @@
+@media(max-width:700px) {
+    body .principal {
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 5rem;
+        background-repeat: repeat;
+    }
+
+    .principal .texto-principal{
+        text-align: center;
+        margin-right: 0rem;
+    }
+
+    .principal .paragrafo{
+        margin-left: 2rem;
+    }
+
+    .formulario{
+        max-width: 30rem;
+    }
+}

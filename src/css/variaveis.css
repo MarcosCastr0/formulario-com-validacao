@@ -1,0 +1,18 @@
+:root{
+    /* Pesos */
+    --peso-regular: 400;
+    --peso-forte: 700;
+
+    /* Tamanhos de fontes */
+    --tamanho-paragrafo: 15px;
+    --tamanho-titulo: 20px;
+    --tamanho-texto-pequeno: 8px;
+
+    /* Cores */
+    --branco: #fff;
+    --preto: #000;
+    --perigo: #F52E2E;
+    --sucesso: #00C22B;
+    --cor-cto: #3CCC87;
+    --placeholder: rgba(168, 168, 168, 1);
+}

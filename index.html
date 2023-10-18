@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/responsividade.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+
+    <title>Formulário com Validação</title>
+</head>
+
+<body>
+    <main class="principal">
+        <section class="texto-principal">
+            <h1 class="titulo">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h1>
+            <p class="paragrafo">Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.</p>
+        </section>
+        <section>
+            <form class="formulario">
+                <div class="campos">
+                    <input type="text" placeholder="Nome completo *">
+                    <label for="">campo obrigatório</label>
+                </div>
+                <div class="campos">
+                    <input type="text" placeholder="Email *">
+                    <label for="">campo obrigatório</label>
+                </div>
+                <div class="campos">
+                    <input type="text" placeholder="Telefone *">
+                    <label for="">campo obrigatório</label>
+                </div>
+                <div class="campos">
+                    <textarea placeholder="Mensagem *"  class="mensagem" rows="4" cols="50"></textarea>
+                    <label for="">campo obrigatório</label>
+                </div>
+                <p class="campos-obrigatorios">* campos obrigatórios</p>
+                <a href="#" class="botao" id="botao">Enviar</a>
+            </form>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
